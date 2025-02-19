@@ -25,7 +25,7 @@ struct WakeWiseApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+					BottomNavigationView()
         }
         .modelContainer(sharedModelContainer)
     }

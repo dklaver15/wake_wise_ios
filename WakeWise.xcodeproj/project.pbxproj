@@ -24,9 +24,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7306D0512D6147CF00771070 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		7306D0542D6147DF00771070 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7306D0572D614E1E00771070 /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
+		7306D05A2D62976700771070 /* AlarmList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmList.swift; sourceTree = "<group>"; };
+		733092432D5EB1150075EADC /* ContainerSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerSize.swift; sourceTree = "<group>"; };
+		733092462D5FBA0A0075EADC /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		733092532D6131D90075EADC /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		7373B3C12D613685003B9464 /* CurrentTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimeView.swift; sourceTree = "<group>"; };
+		7373B3C72D614580003B9464 /* BottomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationView.swift; sourceTree = "<group>"; };
 		73D837C42D5D3607006602DB /* WakeWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D837D82D5D3608006602DB /* WakeWiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakeWiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D837E22D5D3608006602DB /* WakeWiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakeWiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D838012D5D375E006602DB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		73D838042D5D375E006602DB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		73D838082D5D375E006602DB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -85,9 +97,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7306D04F2D6147C400771070 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				7306D0512D6147CF00771070 /* ThemeView.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		731CF5EC2D5E3710001F771A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7306D0542D6147DF00771070 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		733092542D6131D90075EADC /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				733092532D6131D90075EADC /* ToolbarView.swift */,
+			);
+			path = Toolbar;
+			sourceTree = "<group>";
+		};
+		7373B3BF2D61366E003B9464 /* CurrentTimeDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				7373B3C12D613685003B9464 /* CurrentTimeView.swift */,
+			);
+			path = CurrentTimeDisplay;
+			sourceTree = "<group>";
+		};
+		7373B3C52D61456A003B9464 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				7373B3C72D614580003B9464 /* BottomNavigationView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		73D837BB2D5D3607006602DB = {
 			isa = PBXGroup;
 			children = (
+				73D838002D5D372F006602DB /* MVVM */,
 				73D837C62D5D3607006602DB /* WakeWise */,
 				73D837DB2D5D3608006602DB /* WakeWiseTests */,
 				73D837E52D5D3608006602DB /* WakeWiseUITests */,
@@ -103,6 +156,78 @@
 				73D837E22D5D3608006602DB /* WakeWiseUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		73D838002D5D372F006602DB /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				73D838032D5D375E006602DB /* Features */,
+				73D838052D5D375E006602DB /* Models */,
+				73D838062D5D375E006602DB /* Resources */,
+				73D838072D5D375E006602DB /* Services */,
+				73D838092D5D375E006602DB /* Utilities */,
+			);
+			name = MVVM;
+			sourceTree = "<group>";
+		};
+		73D838022D5D375E006602DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7373B3BF2D61366E003B9464 /* CurrentTimeDisplay */,
+				733092542D6131D90075EADC /* Toolbar */,
+				73D838012D5D375E006602DB /* HomeView.swift */,
+				7306D05A2D62976700771070 /* AlarmList.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		73D838032D5D375E006602DB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7306D04F2D6147C400771070 /* Theme */,
+				7373B3C52D61456A003B9464 /* Navigation */,
+				731CF5EC2D5E3710001F771A /* Settings */,
+				73D838022D5D375E006602DB /* Home */,
+			);
+			name = Features;
+			path = WakeWise/Features;
+			sourceTree = "<group>";
+		};
+		73D838052D5D375E006602DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73D838042D5D375E006602DB /* Item.swift */,
+				733092462D5FBA0A0075EADC /* Alarm.swift */,
+				7306D0572D614E1E00771070 /* Weekday.swift */,
+			);
+			name = Models;
+			path = WakeWise/Models;
+			sourceTree = "<group>";
+		};
+		73D838062D5D375E006602DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = WakeWise/Resources;
+			sourceTree = "<group>";
+		};
+		73D838072D5D375E006602DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			path = WakeWise/Services;
+			sourceTree = "<group>";
+		};
+		73D838092D5D375E006602DB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				73D838082D5D375E006602DB /* Colors.swift */,
+				733092432D5EB1150075EADC /* ContainerSize.swift */,
+			);
+			name = Utilities;
+			path = WakeWise/Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
